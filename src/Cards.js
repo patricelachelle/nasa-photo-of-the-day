@@ -28,9 +28,9 @@ const Wrapper = styled.div`
 const NasaImage = styled.img`
   width: 80%;
   border-radius: 3px;
-  height: .5%;
+  height: auto;
   object-fit: scale;
-  flex-shrink: 0;
+  flex-shrink: 1;
   
 `;
 
@@ -64,9 +64,7 @@ function Cards () {
             </Title>
             <Text>
             <CardText tag="span">{explanation.explanation}</CardText>
-            <CardText>
-            <small className="text-muted">{date}</small>
-            </CardText>
+            <CardText className="text-success">{date}</CardText>
             </Text>
             </Wrapper>
         </Card>       
