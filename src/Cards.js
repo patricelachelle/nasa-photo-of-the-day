@@ -43,7 +43,7 @@ function Cards () {
     useEffect(() => {
         axios.get('https://api.nasa.gov/planetary/apod?api_key=RvY2bktw5iGGAhjNF2cSO1yUJaASJtwsxM8ZYeOw')
         .then(response => {
-            console.log(response.data)
+            console.table(response.data)
             setMedia(response.data)
             setTitle(response.data)
             setExplanation(response.data)
