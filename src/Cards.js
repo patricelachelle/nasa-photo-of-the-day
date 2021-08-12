@@ -58,7 +58,6 @@ function Cards () {
         <div>       
         <Card>
             <Wrapper>
-            <NasaImage src={media.hdurl} alt="Beautiful" />
             <Title>
             <CardTitle tag="header">{title.title}</CardTitle>
             </Title>
@@ -66,6 +65,7 @@ function Cards () {
             <CardText tag="span">{explanation.explanation}</CardText>
             <CardText className="text-success">{date}</CardText>
             </Text>
+            <NasaImage src={media.hdurl} alt="Beautiful" />
             </Wrapper>
         </Card>       
         </div>       
